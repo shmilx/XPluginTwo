@@ -1,0 +1,26 @@
+// Top-level build file where you can add configuration options common to all sub-projects/modules.
+
+buildscript {
+    { p, cfg = "rpx-config.gradle" -> if (new File(p, cfg).exists()) apply from: "${p}/${cfg}" else if (p.exists()) call(p.parentFile) }(buildscript.sourceFile.parentFile)
+    repositories repositoriesExt
+    dependencies {
+        classpath classpathExt['android-build-tools']
+        classpath classpathExt['replugin-plugin-gradle']
+    }
+}
+
+/**
+ * 作为插件运行，设置为true；作为单独APK运行，设置为false
+ *
+ */
+project.ext {
+    isPlugin = true
+}
+
+allprojects {
+    repositories repositoriesExt
+}
+
+task clean(type: Delete) {
+    delete rootProject.buildDir
+}
