@@ -1,5 +1,5 @@
 ## XRePlugin
-
+适配androidx和gradle高版本
 ## 官方原文档
 
 - [《RePlugin 官方【英文】文档》](./README_ORIGINAL.md)
