@@ -21,24 +21,14 @@ include ':replugin-plugin-gradle'
 include ':replugin-plugin-library'
 
 // 额外工程
-includeBuild('./replugin-sample/host')
-includeBuild('./replugin-sample/plugin/plugin-demo1')
-includeBuild('./replugin-sample/plugin/plugin-demo2')
-includeBuild('./replugin-sample/plugin/plugin-demo3-kotlin')
-includeBuild('./replugin-sample/plugin/plugin-webview')
-includeBuild('./replugin-sample-extra/fresco/FrescoHost')
-includeBuild('./replugin-sample-extra/fresco/FrescoPlugin')
+//includeBuild('./replugin-sample/host')
+//includeBuild('./replugin-sample/plugin/plugin-demo1')
+//includeBuild('./replugin-sample/plugin/plugin-demo2')
+//includeBuild('./replugin-sample/plugin/plugin-demo3-kotlin')
+//includeBuild('./replugin-sample/plugin/plugin-webview')
+//includeBuild('./replugin-sample-extra/fresco/FrescoHost')
+//includeBuild('./replugin-sample-extra/fresco/FrescoPlugin')
+//
+//includeBuild('./repluginx-sample/host')
+//includeBuild('./repluginx-sample/plugin/plugin-demo1')
 
-includeBuild('./repluginx-sample/host')
-includeBuild('./repluginx-sample/plugin/plugin-demo1')
-
-//includeBuild('./repluginx-sample/host') {
-//    dependencySubstitution {
-////        substitute module('com.github.GitLqr.RePluginX:replugin-host-library') with project(':')
-//    }
-//}
-//includeBuild('./repluginx-sample/plugin/plugin-demo1') {
-//    dependencySubstitution {
-////        substitute module('com.github.GitLqr.RePluginX:replugin-plugin-library') with project(':')
-//    }
-//}
